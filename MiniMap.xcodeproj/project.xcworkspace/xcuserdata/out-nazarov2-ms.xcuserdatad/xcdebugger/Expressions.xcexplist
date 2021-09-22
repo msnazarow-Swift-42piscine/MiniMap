@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "MapPresenter.getModel(for:):MapPresenter.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "annotationColors">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ListPresenterDataSource.tableView(_:cellForRowAt:):ListPresenterDataSource.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "model.identifier">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__pthread_kill:(null)">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

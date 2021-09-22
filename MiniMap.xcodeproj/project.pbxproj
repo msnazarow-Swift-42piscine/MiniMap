@@ -9,21 +9,76 @@
 /* Begin PBXBuildFile section */
 		3E5A496626FA4F4200B78C96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A496526FA4F4200B78C96 /* AppDelegate.swift */; };
 		3E5A496826FA4F4200B78C96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A496726FA4F4200B78C96 /* SceneDelegate.swift */; };
-		3E5A496A26FA4F4200B78C96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A496926FA4F4200B78C96 /* ViewController.swift */; };
 		3E5A496D26FA4F4200B78C96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E5A496B26FA4F4200B78C96 /* Main.storyboard */; };
 		3E5A496F26FA4F4300B78C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E5A496E26FA4F4300B78C96 /* Assets.xcassets */; };
 		3E5A497226FA4F4300B78C96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E5A497026FA4F4300B78C96 /* LaunchScreen.storyboard */; };
+		3E5A499B26FA567F00B78C96 /* MiniMapContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A498326FA567F00B78C96 /* MiniMapContract.swift */; };
+		3E5A499C26FA567F00B78C96 /* MapContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A498726FA567F00B78C96 /* MapContract.swift */; };
+		3E5A499D26FA567F00B78C96 /* MapAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A498926FA567F00B78C96 /* MapAssembly.swift */; };
+		3E5A499E26FA567F00B78C96 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A498B26FA567F00B78C96 /* MapPresenter.swift */; };
+		3E5A499F26FA567F00B78C96 /* MapPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A498C26FA567F00B78C96 /* MapPresenterDelegate.swift */; };
+		3E5A49A026FA567F00B78C96 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A498E26FA567F00B78C96 /* MapViewController.swift */; };
+		3E5A49A126FA567F00B78C96 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A499026FA567F00B78C96 /* MapInteractor.swift */; };
+		3E5A49A226FA567F00B78C96 /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A499226FA567F00B78C96 /* MapRouter.swift */; };
+		3E5A49A326FA567F00B78C96 /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A499626FA567F00B78C96 /* CellModel.swift */; };
+		3E5A49A426FA567F00B78C96 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A499726FA567F00B78C96 /* Cell.swift */; };
+		3E5A49A526FA567F00B78C96 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A499926FA567F00B78C96 /* SectionModel.swift */; };
+		3E5A49A626FA567F00B78C96 /* TableViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A499A26FA567F00B78C96 /* TableViewContract.swift */; };
+		3E5A49AB26FA713100B78C96 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A49AA26FA713100B78C96 /* LocationManager.swift */; };
+		3E5A49BE26FA8C7C00B78C96 /* ListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A49B226FA8C7B00B78C96 /* ListContract.swift */; };
+		3E5A49BF26FA8C7C00B78C96 /* ListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A49B426FA8C7B00B78C96 /* ListAssembly.swift */; };
+		3E5A49C026FA8C7C00B78C96 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A49B626FA8C7B00B78C96 /* ListPresenter.swift */; };
+		3E5A49C126FA8C7C00B78C96 /* ListPresenterDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A49B726FA8C7B00B78C96 /* ListPresenterDataSource.swift */; };
+		3E5A49C226FA8C7C00B78C96 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A49B926FA8C7B00B78C96 /* ListViewController.swift */; };
+		3E5A49C326FA8C7C00B78C96 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A49BB26FA8C7B00B78C96 /* ListInteractor.swift */; };
+		3E5A49C426FA8C7C00B78C96 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A49BD26FA8C7B00B78C96 /* ListRouter.swift */; };
+		3E5A49C926FA8E1F00B78C96 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A49C826FA8E1F00B78C96 /* LocationModel.swift */; };
+		3E5A49CC26FAA45A00B78C96 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A49CB26FAA45A00B78C96 /* LocationCell.swift */; };
+		3E5A49D226FB238C00B78C96 /* MiniMapTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A49D126FB238C00B78C96 /* MiniMapTabBarController.swift */; };
+		3E5A49D826FB32BE00B78C96 /* Notification.Name+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A49D726FB32BE00B78C96 /* Notification.Name+Ext.swift */; };
+		3E5A49EA26FB9FCE00B78C96 /* ModelRepresentableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A49E926FB9FCE00B78C96 /* ModelRepresentableProtocol.swift */; };
+		3E5A49F326FBA42000B78C96 /* LocationMarkerAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A49F026FBA42000B78C96 /* LocationMarkerAnnotation.swift */; };
+		3E5A49F426FBA42000B78C96 /* MarkerAnnotationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A49F126FBA42000B78C96 /* MarkerAnnotationModel.swift */; };
+		3E5A49F526FBA42000B78C96 /* MarkerAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A49F226FBA42000B78C96 /* MarkerAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E5A496226FA4F4200B78C96 /* MiniMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E5A496526FA4F4200B78C96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E5A496726FA4F4200B78C96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3E5A496926FA4F4200B78C96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3E5A496C26FA4F4200B78C96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E5A496E26FA4F4300B78C96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E5A497126FA4F4300B78C96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E5A497326FA4F4300B78C96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E5A498326FA567F00B78C96 /* MiniMapContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniMapContract.swift; sourceTree = "<group>"; };
+		3E5A498726FA567F00B78C96 /* MapContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapContract.swift; sourceTree = "<group>"; };
+		3E5A498926FA567F00B78C96 /* MapAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAssembly.swift; sourceTree = "<group>"; };
+		3E5A498B26FA567F00B78C96 /* MapPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		3E5A498C26FA567F00B78C96 /* MapPresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPresenterDelegate.swift; sourceTree = "<group>"; };
+		3E5A498E26FA567F00B78C96 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		3E5A499026FA567F00B78C96 /* MapInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		3E5A499226FA567F00B78C96 /* MapRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		3E5A499626FA567F00B78C96 /* CellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		3E5A499726FA567F00B78C96 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		3E5A499926FA567F00B78C96 /* SectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
+		3E5A499A26FA567F00B78C96 /* TableViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewContract.swift; sourceTree = "<group>"; };
+		3E5A49AA26FA713100B78C96 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		3E5A49AE26FA7CD300B78C96 /* School21.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = School21.gpx; sourceTree = "<group>"; };
+		3E5A49B226FA8C7B00B78C96 /* ListContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListContract.swift; sourceTree = "<group>"; };
+		3E5A49B426FA8C7B00B78C96 /* ListAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListAssembly.swift; sourceTree = "<group>"; };
+		3E5A49B626FA8C7B00B78C96 /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		3E5A49B726FA8C7B00B78C96 /* ListPresenterDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenterDataSource.swift; sourceTree = "<group>"; };
+		3E5A49B926FA8C7B00B78C96 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		3E5A49BB26FA8C7B00B78C96 /* ListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		3E5A49BD26FA8C7B00B78C96 /* ListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		3E5A49C826FA8E1F00B78C96 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		3E5A49CB26FAA45A00B78C96 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		3E5A49D126FB238C00B78C96 /* MiniMapTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMapTabBarController.swift; sourceTree = "<group>"; };
+		3E5A49D726FB32BE00B78C96 /* Notification.Name+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification.Name+Ext.swift"; sourceTree = "<group>"; };
+		3E5A49E926FB9FCE00B78C96 /* ModelRepresentableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRepresentableProtocol.swift; sourceTree = "<group>"; };
+		3E5A49F026FBA42000B78C96 /* LocationMarkerAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationMarkerAnnotation.swift; sourceTree = "<group>"; };
+		3E5A49F126FBA42000B78C96 /* MarkerAnnotationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerAnnotationModel.swift; sourceTree = "<group>"; };
+		3E5A49F226FBA42000B78C96 /* MarkerAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +111,243 @@
 		3E5A496426FA4F4200B78C96 /* MiniMap */ = {
 			isa = PBXGroup;
 			children = (
+				3E5A49D626FB328F00B78C96 /* Extentions */,
+				3E5A49C726FA8E1300B78C96 /* Entities */,
+				3E5A49A926FA712400B78C96 /* Services */,
+				3E5A499326FA567F00B78C96 /* Components */,
+				3E5A498226FA567F00B78C96 /* Contract */,
+				3E5A498426FA567F00B78C96 /* Modules */,
 				3E5A496526FA4F4200B78C96 /* AppDelegate.swift */,
 				3E5A496726FA4F4200B78C96 /* SceneDelegate.swift */,
-				3E5A496926FA4F4200B78C96 /* ViewController.swift */,
+				3E5A49D126FB238C00B78C96 /* MiniMapTabBarController.swift */,
 				3E5A496B26FA4F4200B78C96 /* Main.storyboard */,
 				3E5A496E26FA4F4300B78C96 /* Assets.xcassets */,
 				3E5A497026FA4F4300B78C96 /* LaunchScreen.storyboard */,
 				3E5A497326FA4F4300B78C96 /* Info.plist */,
 			);
 			path = MiniMap;
+			sourceTree = "<group>";
+		};
+		3E5A498226FA567F00B78C96 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A498326FA567F00B78C96 /* MiniMapContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		3E5A498426FA567F00B78C96 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A498526FA567F00B78C96 /* Map */,
+				3E5A49B026FA8C7B00B78C96 /* List */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3E5A498526FA567F00B78C96 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A498626FA567F00B78C96 /* Contract */,
+				3E5A498826FA567F00B78C96 /* Assembly */,
+				3E5A498A26FA567F00B78C96 /* Presenter */,
+				3E5A498D26FA567F00B78C96 /* View */,
+				3E5A498F26FA567F00B78C96 /* Interactor */,
+				3E5A499126FA567F00B78C96 /* Router */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		3E5A498626FA567F00B78C96 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A498726FA567F00B78C96 /* MapContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		3E5A498826FA567F00B78C96 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A498926FA567F00B78C96 /* MapAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		3E5A498A26FA567F00B78C96 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A498B26FA567F00B78C96 /* MapPresenter.swift */,
+				3E5A498C26FA567F00B78C96 /* MapPresenterDelegate.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3E5A498D26FA567F00B78C96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A498E26FA567F00B78C96 /* MapViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E5A498F26FA567F00B78C96 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A499026FA567F00B78C96 /* MapInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3E5A499126FA567F00B78C96 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A499226FA567F00B78C96 /* MapRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3E5A499326FA567F00B78C96 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A49DE26FB9F3100B78C96 /* MKMapViewComponents */,
+				3E5A499426FA567F00B78C96 /* UITableViewComponents */,
+				3E5A49AE26FA7CD300B78C96 /* School21.gpx */,
+				3E5A49E926FB9FCE00B78C96 /* ModelRepresentableProtocol.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3E5A499426FA567F00B78C96 /* UITableViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A499526FA567F00B78C96 /* Cells */,
+				3E5A499826FA567F00B78C96 /* Sections */,
+				3E5A499A26FA567F00B78C96 /* TableViewContract.swift */,
+			);
+			path = UITableViewComponents;
+			sourceTree = "<group>";
+		};
+		3E5A499526FA567F00B78C96 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A499626FA567F00B78C96 /* CellModel.swift */,
+				3E5A49CB26FAA45A00B78C96 /* LocationCell.swift */,
+				3E5A499726FA567F00B78C96 /* Cell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3E5A499826FA567F00B78C96 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A499926FA567F00B78C96 /* SectionModel.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		3E5A49A926FA712400B78C96 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A49AA26FA713100B78C96 /* LocationManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3E5A49B026FA8C7B00B78C96 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A49B126FA8C7B00B78C96 /* Contract */,
+				3E5A49B326FA8C7B00B78C96 /* Assembly */,
+				3E5A49B526FA8C7B00B78C96 /* Presenter */,
+				3E5A49B826FA8C7B00B78C96 /* View */,
+				3E5A49BA26FA8C7B00B78C96 /* Interactor */,
+				3E5A49BC26FA8C7B00B78C96 /* Router */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		3E5A49B126FA8C7B00B78C96 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A49B226FA8C7B00B78C96 /* ListContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		3E5A49B326FA8C7B00B78C96 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A49B426FA8C7B00B78C96 /* ListAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		3E5A49B526FA8C7B00B78C96 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A49B626FA8C7B00B78C96 /* ListPresenter.swift */,
+				3E5A49B726FA8C7B00B78C96 /* ListPresenterDataSource.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3E5A49B826FA8C7B00B78C96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A49B926FA8C7B00B78C96 /* ListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E5A49BA26FA8C7B00B78C96 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A49BB26FA8C7B00B78C96 /* ListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3E5A49BC26FA8C7B00B78C96 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A49BD26FA8C7B00B78C96 /* ListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3E5A49C726FA8E1300B78C96 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A49C826FA8E1F00B78C96 /* LocationModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		3E5A49D626FB328F00B78C96 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A49D726FB32BE00B78C96 /* Notification.Name+Ext.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		3E5A49DE26FB9F3100B78C96 /* MKMapViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A49EF26FBA42000B78C96 /* Annotations */,
+			);
+			path = MKMapViewComponents;
+			sourceTree = "<group>";
+		};
+		3E5A49EF26FBA42000B78C96 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A49F026FBA42000B78C96 /* LocationMarkerAnnotation.swift */,
+				3E5A49F126FBA42000B78C96 /* MarkerAnnotationModel.swift */,
+				3E5A49F226FBA42000B78C96 /* MarkerAnnotation.swift */,
+			);
+			path = Annotations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +420,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E5A496A26FA4F4200B78C96 /* ViewController.swift in Sources */,
+				3E5A499D26FA567F00B78C96 /* MapAssembly.swift in Sources */,
+				3E5A49BE26FA8C7C00B78C96 /* ListContract.swift in Sources */,
+				3E5A49C126FA8C7C00B78C96 /* ListPresenterDataSource.swift in Sources */,
+				3E5A499E26FA567F00B78C96 /* MapPresenter.swift in Sources */,
+				3E5A49A126FA567F00B78C96 /* MapInteractor.swift in Sources */,
+				3E5A49AB26FA713100B78C96 /* LocationManager.swift in Sources */,
+				3E5A49F526FBA42000B78C96 /* MarkerAnnotation.swift in Sources */,
+				3E5A499B26FA567F00B78C96 /* MiniMapContract.swift in Sources */,
+				3E5A49F326FBA42000B78C96 /* LocationMarkerAnnotation.swift in Sources */,
+				3E5A49C326FA8C7C00B78C96 /* ListInteractor.swift in Sources */,
+				3E5A49C426FA8C7C00B78C96 /* ListRouter.swift in Sources */,
+				3E5A49A526FA567F00B78C96 /* SectionModel.swift in Sources */,
+				3E5A49EA26FB9FCE00B78C96 /* ModelRepresentableProtocol.swift in Sources */,
+				3E5A49A426FA567F00B78C96 /* Cell.swift in Sources */,
+				3E5A49C026FA8C7C00B78C96 /* ListPresenter.swift in Sources */,
+				3E5A49A026FA567F00B78C96 /* MapViewController.swift in Sources */,
+				3E5A499C26FA567F00B78C96 /* MapContract.swift in Sources */,
+				3E5A49D226FB238C00B78C96 /* MiniMapTabBarController.swift in Sources */,
 				3E5A496626FA4F4200B78C96 /* AppDelegate.swift in Sources */,
+				3E5A49C926FA8E1F00B78C96 /* LocationModel.swift in Sources */,
+				3E5A49A226FA567F00B78C96 /* MapRouter.swift in Sources */,
+				3E5A49D826FB32BE00B78C96 /* Notification.Name+Ext.swift in Sources */,
+				3E5A49A626FA567F00B78C96 /* TableViewContract.swift in Sources */,
 				3E5A496826FA4F4200B78C96 /* SceneDelegate.swift in Sources */,
+				3E5A499F26FA567F00B78C96 /* MapPresenterDelegate.swift in Sources */,
+				3E5A49CC26FAA45A00B78C96 /* LocationCell.swift in Sources */,
+				3E5A49A326FA567F00B78C96 /* CellModel.swift in Sources */,
+				3E5A49BF26FA8C7C00B78C96 /* ListAssembly.swift in Sources */,
+				3E5A49C226FA8C7C00B78C96 /* ListViewController.swift in Sources */,
+				3E5A49F426FBA42000B78C96 /* MarkerAnnotationModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
