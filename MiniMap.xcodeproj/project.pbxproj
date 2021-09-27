@@ -63,7 +63,6 @@
 		3E5A499926FA567F00B78C96 /* SectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
 		3E5A499A26FA567F00B78C96 /* TableViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewContract.swift; sourceTree = "<group>"; };
 		3E5A49AA26FA713100B78C96 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		3E5A49AE26FA7CD300B78C96 /* School21.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = School21.gpx; sourceTree = "<group>"; };
 		3E5A49B226FA8C7B00B78C96 /* ListContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListContract.swift; sourceTree = "<group>"; };
 		3E5A49B426FA8C7B00B78C96 /* ListAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListAssembly.swift; sourceTree = "<group>"; };
 		3E5A49B626FA8C7B00B78C96 /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
@@ -212,7 +211,6 @@
 			children = (
 				3E5A49DE26FB9F3100B78C96 /* MKMapViewComponents */,
 				3E5A499426FA567F00B78C96 /* UITableViewComponents */,
-				3E5A49AE26FA7CD300B78C96 /* School21.gpx */,
 				3E5A49E926FB9FCE00B78C96 /* ModelRepresentableProtocol.swift */,
 			);
 			path = Components;
