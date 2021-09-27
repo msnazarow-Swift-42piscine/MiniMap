@@ -3,18 +3,18 @@
 //  MiniMap
 //
 //  Created by out-nazarov2-ms on 22.09.2021.
-//  
+//
 //
 
 import Foundation
 
 class ListPresenter: ViewToPresenterListProtocol {
-
     // MARK: Properties
+
     weak var view: PresenterToViewListProtocol?
     let interactor: PresenterToInteractorListProtocol?
     let router: PresenterToRouterListProtocol?
-    let dataSource:PresenterToDataSourceListProtocol?
+    let dataSource: PresenterToDataSourceListProtocol?
     weak var delegate: TableViewToMapViewProtocol?
 
     let models = [
@@ -26,19 +26,21 @@ class ListPresenter: ViewToPresenterListProtocol {
     ]
 
     // MARK: Init
+
     init(view: PresenterToViewListProtocol,
          interactor: PresenterToInteractorListProtocol?,
          router: PresenterToRouterListProtocol?,
-         dataSource: PresenterToDataSourceListProtocol?) {
+         dataSource: PresenterToDataSourceListProtocol?)
+    {
         self.view = view
         self.interactor = interactor
         self.router = router
         self.dataSource = dataSource
     }
 
-    func viewDidLoad(){
+    func viewDidLoad() {
         dataSource?.updateForSections([SectionModel(models)])
-        models.forEach{ NotificationCenter.default.post(name: .pinAdded, object: $0)}
+        models.forEach { NotificationCenter.default.post(name: .pinAdded, object: $0) }
     }
 
     func didSelectRowAt(index: Int) {
@@ -47,6 +49,4 @@ class ListPresenter: ViewToPresenterListProtocol {
     }
 }
 
-extension ListPresenter: CellToPresenterListProtocol {
-    
-}
+extension ListPresenter: CellToPresenterListProtocol {}

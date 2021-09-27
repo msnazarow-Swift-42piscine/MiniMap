@@ -8,7 +8,6 @@
 import UIKit
 
 class LocationMarkerAnnotation: MarkerAnnotation {
-
     override func updateViews() {
         guard let model = model as? MarkerAnnotationModel else {
             return

@@ -3,17 +3,16 @@
 //  MiniMap
 //
 //  Created by out-nazarov2-ms on 21.09.2021.
-//  
+//
 //
 
-import UIKit
 import MapKit
-class MyPin: MKAnnotationView {
+import UIKit
+class MyPin: MKAnnotationView {}
 
-}
 class MapViewController: UIViewController {
-
     // MARK: - Properties
+
     var presenter: ViewToPresenterMapProtocol?
 
     let mapView = MKMapView()
@@ -43,6 +42,7 @@ class MapViewController: UIViewController {
     }()
 
     // MARK: - Lifecycle Methods
+
     override func loadView() {
         view = mapView
         mapView.showsUserLocation = true
@@ -54,7 +54,6 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         presenter?.viewDidLoad()
-        
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -78,9 +77,8 @@ class MapViewController: UIViewController {
             locationButton.leadingAnchor.constraint(equalTo: segmentedControl.trailingAnchor, constant: 5),
             locationButton.centerYAnchor.constraint(equalTo: segmentedControl.centerYAnchor),
             locationButton.heightAnchor.constraint(equalTo: segmentedControl.heightAnchor),
-            locationButton.heightAnchor.constraint(equalTo: locationButton.widthAnchor)
+            locationButton.heightAnchor.constraint(equalTo: locationButton.widthAnchor),
         ])
-
     }
 
     @objc private func didChangeSegmentedControl(_ sender: UISegmentedControl) {
@@ -90,18 +88,15 @@ class MapViewController: UIViewController {
     @objc private func didLocationButtonTapped() {
         presenter?.didLocationButtonTapped()
     }
-
-
- 
 }
 
-extension MapViewController: PresenterToViewMapProtocol{
+extension MapViewController: PresenterToViewMapProtocol {
     // TODO: Implement View Output Methods
     func setMapType(type: MKMapType) {
         mapView.mapType = type
     }
 
-    func addMapPin(with pin: MKAnnotation){
+    func addMapPin(with pin: MKAnnotation) {
         mapView.addAnnotation(pin)
     }
 
@@ -109,5 +104,3 @@ extension MapViewController: PresenterToViewMapProtocol{
         mapView.setRegion(MKCoordinateRegion(center: coordinates, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)), animated: true)
     }
 }
-
-

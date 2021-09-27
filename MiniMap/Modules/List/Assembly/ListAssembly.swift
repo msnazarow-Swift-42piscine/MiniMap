@@ -3,16 +3,15 @@
 //  MiniMap
 //
 //  Created by out-nazarov2-ms on 22.09.2021.
-//  
+//
 //
 
 import UIKit
 
-enum ListAssembly{
-    
+enum ListAssembly {
     // MARK: Static methods
-    static func createModule() -> UIViewController {
 
+    static func createModule() -> UIViewController {
         let viewController = ListViewController()
         let router = ListRouter(view: viewController)
         let interactor = ListInteractor()

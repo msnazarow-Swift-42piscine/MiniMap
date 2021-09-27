@@ -26,14 +26,13 @@ class MiniMapTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        viewControllers = [vc1, vc2]
-      setViewControllers([vc1, vc2], animated: true)
+        setViewControllers([vc1, vc2], animated: true)
         selectedIndex = 1
         tabBar.items?[0].image = UIImage(named: "map")
         tabBar.items?[1].image = UIImage(systemName: "list.star")
         // Do any additional setup after loading the view.
     }
 }
-
 
 //        let vc3 = MapAssembly.createModule()
 //        vc3.view.backgroundColor = .blue

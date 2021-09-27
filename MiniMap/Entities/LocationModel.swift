@@ -7,6 +7,4 @@
 
 import Foundation
 
-struct LocationModel {
-
-}
+struct LocationModel {}

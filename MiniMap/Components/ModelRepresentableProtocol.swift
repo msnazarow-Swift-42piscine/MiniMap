@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 protocol ModelRepresentable {
     var model: Identifiable? { get set }
 }

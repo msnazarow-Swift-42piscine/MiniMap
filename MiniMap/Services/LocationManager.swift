@@ -5,8 +5,8 @@
 //  Created by out-nazarov2-ms on 21.09.2021.
 //
 
-import Foundation
 import CoreLocation
+import Foundation
 
 class LocationManager: NSObject, CLLocationManagerDelegate {
     static let shared = LocationManager()
@@ -21,9 +21,9 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         manager.startUpdatingLocation()
     }
 
-    public func resolveLocationName(with location: CLLocation, complition: @escaping ((String?)-> Void)) {
+    public func resolveLocationName(with location: CLLocation, complition: @escaping ((String?) -> Void)) {
         let geocoder = CLGeocoder()
-        geocoder.reverseGeocodeLocation(location, preferredLocale: .current) { (placemarks, error) in
+        geocoder.reverseGeocodeLocation(location, preferredLocale: .current) { placemarks, error in
             guard let place = placemarks?.first, error == nil else {
                 complition(nil)
                 return

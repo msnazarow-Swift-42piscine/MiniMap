@@ -3,14 +3,14 @@
 //  MiniMap
 //
 //  Created by out-nazarov2-ms on 22.09.2021.
-//  
+//
 //
 
 import UIKit
 
 class ListPresenterDataSource: NSObject, PresenterToDataSourceListProtocol {
-
     // MARK: Properties
+
     weak var presenter: CellToPresenterListProtocol?
 
     private var sections: [SectionModel] = []

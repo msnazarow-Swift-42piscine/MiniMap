@@ -8,7 +8,6 @@
 import Foundation
 
 class LocationCell: Cell {
-
     override func updateViews() {
         guard let model = model as? CellModel else {
             return
