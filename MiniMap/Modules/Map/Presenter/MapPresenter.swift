@@ -34,11 +34,6 @@ class MapPresenter: NSObject, ViewToPresenterMapProtocol {
     func viewDidLoad() {
         NotificationCenter.default.addObserver(self, selector: #selector(locationSelected), name: .locationSelected, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(addMapPin), name: .pinAdded, object: nil)
-//
-//        LocationManager.shared.getUserLocation { [self] (location) in
-//                addMapPin(with: location)
-//        }
-//        view?.setZoom(for: CLLocationCoordinate2D())
     }
 
     func didChangeSegmentedControl(tab: Int) {
@@ -89,10 +84,11 @@ extension MapPresenter: TableViewToMapViewProtocol {
         pin.title = location.title
         pin.subtitle = location.subTitle
         pin.coordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
-        if pin.title == "Школа21" {}
         DispatchQueue.main.async {
+            if pin.title == "Школа 21" {
+                self.view?.setZoom(for: pin.coordinate)
+            }
             self.view?.addMapPin(with: pin)
-//            self.view?.setZoom(for: pin.coordinate)
         }
     }
 }
