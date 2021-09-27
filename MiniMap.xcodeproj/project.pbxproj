@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E596B0B2701E77300DEE603 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E596B0A2701E77300DEE603 /* MoreViewController.swift */; };
 		3E5A496626FA4F4200B78C96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A496526FA4F4200B78C96 /* AppDelegate.swift */; };
 		3E5A496826FA4F4200B78C96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A496726FA4F4200B78C96 /* SceneDelegate.swift */; };
 		3E5A496D26FA4F4200B78C96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E5A496B26FA4F4200B78C96 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E596B0A2701E77300DEE603 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		3E5A496226FA4F4200B78C96 /* MiniMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E5A496526FA4F4200B78C96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E5A496726FA4F4200B78C96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			children = (
 				3E5A498526FA567F00B78C96 /* Map */,
 				3E5A49B026FA8C7B00B78C96 /* List */,
+				3E596B0A2701E77300DEE603 /* MoreViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				3E5A49A326FA567F00B78C96 /* CellModel.swift in Sources */,
 				3E5A49BF26FA8C7C00B78C96 /* ListAssembly.swift in Sources */,
 				3E5A49C226FA8C7C00B78C96 /* ListViewController.swift in Sources */,
+				3E596B0B2701E77300DEE603 /* MoreViewController.swift in Sources */,
 				3E5A49F426FBA42000B78C96 /* MarkerAnnotationModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

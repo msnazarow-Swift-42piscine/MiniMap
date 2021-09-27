@@ -21,15 +21,20 @@ class MiniMapTabBarController: UITabBarController {
         return vc
     }()
 
+    let vc3: UIViewController = {
+        let vc = MoreViewController()
+        vc.title = "More"
+        return vc
+    }()
     let imageNames = ["map", "list.stars", "ellipsis"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        viewControllers = [vc1, vc2]
-        setViewControllers([vc1, vc2], animated: true)
+        setViewControllers([vc1, vc2, vc3], animated: true)
         selectedIndex = 1
         tabBar.items?[0].image = UIImage(named: "map")
         tabBar.items?[1].image = UIImage(systemName: "list.star")
+        tabBar.items?[2].image = UIImage(named: "more")
         // Do any additional setup after loading the view.
     }
 }
